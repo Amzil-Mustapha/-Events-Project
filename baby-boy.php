@@ -22,7 +22,8 @@
 
    <nav class="navbar">
       <a href="baby-shower.php">Douche bébé</a>
-      <a href="contact.php"> Se Connecter</a>
+      <a href="calendar/calendar_babyshower.php">Réserver</a>
+      <!-- <a href="contact.php"> Se Connecter</a> -->
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>

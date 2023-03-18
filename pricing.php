@@ -15,6 +15,18 @@
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
+   <style>
+      #inp{
+        height:3.5rem;
+        width:30rem;
+        background: var(--transparent-white);
+        backdrop-filter: blur(.1rem);
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        text-align: center;
+    }
+   </style>
+
 </head>
 <body>
    
@@ -23,60 +35,34 @@
 <?php @include 'header.php'; ?>
 
 <section class="pricing">
+   
+      <form action="" id="formito">
 
-   <h1 class="heading">NOS PRIX </h1>
+<h4 class="heading">Voilà nos packs</h2> <br> <br> <br>
 
-   <div class="box-container">
-
-      <div class="box">
-         <h3>Plan Basic</h3>
-         <div class="price">DH 20 000/+</div>
-         <div class="list">
-            <p> <i class="fas fa-check"></i> photographie</p>
-            <p> <i class="fas fa-check"></i> Maquillage</p>
-            <p> <i class="fas fa-check"></i> Invitations</p>
-            <p> <i class="fas fa-check"></i> Décoration</p>
-            <p> </p>
-            <p> </p>
-            <p> </p>
-            <p> </p>
-         </div>
-         <a href="contact.php" class="btn">choose plan</a>
-      </div>
-
-      <div class="box">
-         <h3>Plan Premium </h3>
-         <div class="price">DH 30 000/+</div>
-         <div class="list">
-         <p> <i class="fas fa-check"></i> photography</p>
-         <p> <i class="fas fa-check"></i> Makeup</p>
-         <p> <i class="fas fa-check"></i> Invitations</p>
-         <p> <i class="fas fa-check"></i> Décoration</p>
-         <p><i class="fas fa-check"></i> Animation & Music </p>
-         <p></p>
-         <p> </p>
-         </div>
-         <a href="contact.php" class="btn">choose plan</a>
-      </div>
-
-      <div class="box">
-         <h3>Plan Ultime </h3>
-         <div class="price">DH 60 000/+</div>
-         <div class="list">
-         <p> <i class="fas fa-check"></i> photography</p>
-         <p> <i class="fas fa-check"></i> Makeup</p>
-         <p> <i class="fas fa-check"></i> Invitations</p>
-         <p> <i class="fas fa-check"></i> Décoration</p>
-         <p><i class="fas fa-check"></i> Animation & Music </p>
-         <p> <i class="fas fa-check"></i> Meals & Drinks</p>
-         </div>
-         <a href="contact.php" class="btn">choose plan</a>
-      </div>
-
+ <div class="box">
+   <div style='margin-left:300px;'>
+     <select name="event" id="inp" style=' height:50px;' >
+       <option value="" >choisir le pack de votre événement</option>
+       <option value="pricing/mariage_price.php">Mariage</option>
+       <option value="pricing/anniv_price.php">Anniversaire</option>
+       <option value="pricing/baby_price.php">Douche de bébés</option>
+       <option value="pricing/gender_price.php">féte de revelation</option>
+       <option value="pricing/diplome_price.php">remise de diplome</option>
+       <option value="pricing/fiancelle_price.php">fiancelle</option>
+     </select> <br> <br> 
+     <input type="submit" class='btn' id="btn" name='btn' value="chercher">
    </div>
-
-</section>
-
+</div></div>
+ </form>
+</div>
+<script>
+  document.getElementById("btn").addEventListener("click", function(event){
+     event.preventDefault();
+     var selectedOption = document.querySelector('select[name="event"]').value;
+     window.location.href = selectedOption;
+  });
+</script>
 <section class="reviews">
 
    <h1 class="heading">Avis Clients</h1>
@@ -181,6 +167,11 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<style>
+   .formito{
+      margin-left:100px;
 
+   }
+</style>
 </body>
 </html>

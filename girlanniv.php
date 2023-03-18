@@ -22,7 +22,8 @@
 
    <nav class="navbar">
       <a href="homeanniv.php">Anniversaire</a>
-      <a href="contact.php"> Se Connecter</a>
+      <a href="calendar/calendar_anniv.php">Réserver</a>
+      <!-- <a href="contact.php"> Se Connecter</a> -->
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>

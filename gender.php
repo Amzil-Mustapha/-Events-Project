@@ -22,7 +22,8 @@
 
    <nav class="navbar">
       <a href="portfolio.php">Nos Designs</a>
-      <a href="contact.php"> Se Connecter</a>
+      <a href="calendar/calendar_gender.php">Réserver</a>
+      <!-- <a href="contact/contact_gender.php"> Se Connecter</a> -->
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>

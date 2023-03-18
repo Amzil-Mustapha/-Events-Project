@@ -17,12 +17,14 @@
 <div class="container">
 
 <section class="header">
-
+   <img src="images_site/logo1.png" alt="" style="max-width: 80px; display: inline-block; vertical-align: top;">
+   
    <a href="home.php" class="logo">OH Events</a>
 
    <nav class="navbar">
       <a href="homeanniv.php">Anniversaire</a>
-      <a href="contact.php"> Se Connecter</a>
+      <a href="calendar/calendar_anniv.php">Réserver</a>
+      <!-- <a href="contact.php"> Se Connecter</a> -->
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -45,10 +47,27 @@
          </div>
 
          <div class="swiper-slide slide">
-            <img src="images_site/birthday/boys/Transportation Themed Birthday Party Ideas Photo 2 of 8.jpg" alt="">
-            <div class="content">
+            <div class="slideshow-container">
+          <div class="mySlides">
+            <?php include('page.php'); ?>
+            <img src="images_site/birthday/b1.png" style="width:400px;height:400px;">
+         </div>
+
+         <div class="mySlides">
+           <img src="images_site/birthday/b2.png" style="width:400px;height:400px;">
+         </div>
+
+         <div class="mySlides">
+           <img src="images_site/birthday/b3.png" style="width:400px;height:400px;">
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>   
+            <!-- <img src="images_site/birthday/boys/Transportation Themed Birthday Party Ideas Photo 2 of 8.jpg" alt=""> -->
+            <!-- <div class="content">
                <a href="contact.php" class="btn">demander</a>
-            </div>
+            </div> -->
          </div>
 
          <div class="swiper-slide slide">
@@ -96,90 +115,6 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script src="js/script.js"></script>
-<style>
-    .local .slide{
 
-height: 35rem;
-
-width: 30rem;
-
-overflow: hidden;
-
-position: relative;
-
-user-select: none;
-
-margin-bottom: 4rem;
-
-}
-
-
-
-.local .slide img{
-
-height: 100%;
-
-width: 100%;
-
-object-fit: cover;
-
-transition: .2s linear;
-
-margin-left: 10px;
-
-}
-
-
-
-.local .slide:hover img{
-
-transform: scale(1.1);
-
-}
-
-
-
-.local .slide .content{
-
-position: absolute;
-
-bottom:0; left:0; right:0;
-
-background: var(--transparent-white);
-
-backdrop-filter: blur(.5rem);
-
-padding:2rem;
-
-text-align: center;
-
-transition: .2s linear;
-
-transform: translateY(calc(100% - 6.5rem));
-
-margin-bottom: 40px;
-
-}
-
-
-
-/* .local .slide:hover .content{
-
-transform: translateY(0);
-
-} */
-
-
-
-.local .slide .content .btn{
-
-font-size: 2rem;
-
-color:var(--black);
-
-text-transform: uppercase;
-
-}
-</style>
 </body>
 </html>

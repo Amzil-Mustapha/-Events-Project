@@ -41,9 +41,7 @@ $conn->close();
   ?>
   <form action="">
    
-    <div class="input-box">
-      <input type="text" id="inp" name='ville' placeholder='Entrez votre ville'>
-    </div><br> <br>
+ 
     <div class='input-box'>
       <select name="event" id="inp" >
         <option value="" >choisir votre événement</option>
@@ -54,15 +52,17 @@ $conn->close();
         <option value="diplome.php">remise de diplome</option>
         <option value="fiancelle.php">fiancelle</option>
       </select>
-      <input type="submit" class='btn' id="btn" name='btn'>
     </div>
   </form>
 </div>
 <script>
-   document.getElementById("btn").addEventListener("click", function(event){
-      event.preventDefault();
-      var selectedOption = document.querySelector('select[name="event"]').value;
-      window.location.href = selectedOption;
-   });
+document.getElementById("inp").addEventListener("change", function() {
+  var selectedOption = this.options[this.selectedIndex];
+  if (selectedOption.value !== "") {
+    window.location.href = selectedOption.value;
+  }
+});
+
+
 </script>
 

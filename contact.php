@@ -54,7 +54,7 @@ if(isset($_POST['send'])){
       <div class="flex">
 
          <div class="inputBox">
-            <span>Votre Nom </span>
+            <span>Votre Nom Complet</span>
             <input type="text" placeholder="Entrer votre Nom" name="name" required>
          </div>
 
@@ -82,16 +82,14 @@ if(isset($_POST['send'])){
             <textarea name="address" placeholder="Entrer votre Adresse" required cols="30" rows="10"></textarea>
          </div>
 
-         <div class="inputBox">
-            <span>Evènements choisi</span>            
-            <textarea name="event" placeholder="Entrer votre événement choisi " required cols="30" rows="10"></textarea>
-         </div>
+         
 
       </div>
 
       <input type="submit" value="ENVOYER" name="send" class="btn">
 
    </form>
+   
 
 </section>
 
